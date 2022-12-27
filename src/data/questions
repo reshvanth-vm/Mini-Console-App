@@ -1,0 +1,213 @@
+MCQ
+8
+What will be the output of the following Java code?
+    class Increment {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }
+32~33~24~25
+1
+MCQ
+13
+What will be the output of the following Java program?
+    class output {
+        public static void main(String args[]) 
+        {
+            double a, b,c;
+            a = 3.0 / 0;
+            b = 0 / 4.0;
+            c = 0 / 0.0;
+	        System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+        } 
+    }
+NaN~Infinity~0.0~all of the mentioned above~error
+4
+MCQ
+14
+What will be the output of the following Java program?
+    class variable_scope 
+    {
+        public static void main(String args[]) 
+        {
+            int x;
+            x = 5;
+            {
+	        int y = 6;
+	        System.out.print(x + " " + y);
+            }
+            System.out.println(x + " " + y);
+        } 
+    }
+Compilation error~Runtime error~5 6 5 6~5 6 5
+1
+MCQ
+1
+Which of the following is a type of polymorphism in Java Programming?
+Multiple polymorphism~Compile time polymorphism~Multilevel polymorphism~Execution time polymorphism
+2
+MCQ
+13
+What will be the output of the following Java program?
+    class leftshift_operator 
+    {
+        public static void main(String args[]) 
+        {        
+             byte x = 64;
+             int i;
+             byte y; 
+             i = x << 2;
+             y = (byte) (x << 2)
+             System.out.print(i + " " + y);
+        } 
+    }
+0 256~0 64~256 0~64 0
+3
+MCQ
+1
+What is the extension of compiled java classes?
+.class~.o~.jar~.java
+1
+MCQ
+1
+Which exception is thrown when java is out of memory?
+MemoryError~OutOfMemoryError~MemoryOutOfBoundsException~MemoryFullException
+2
+MCQ
+20
+What will be the output of the following Java program?
+    class recursion 
+    {
+        int func (int n) 
+        {
+            int result;
+            if (n == 1)
+                return 1;
+            result = func (n - 1);
+            return result;
+        }
+    } 
+    class Output 
+    {
+        public static void main(String args[]) 
+        {
+            recursion obj = new recursion() ;
+            System.out.print(obj.func(5));
+        }
+    }
+1~120~0~None of the mentioned
+1
+MCQ
+18
+What will be the output of the following Java program?
+   final class A 
+    {
+         int i;
+    }    
+    class B extends A 
+    {
+        int j;
+        System.out.println(j + " " + i);  
+    }    
+    class inheritance 
+    {
+        public static void main(String args[])
+        {
+            B obj = new B();
+            obj.display();     
+        }
+   }
+2 2~3 3~Runtime Error~Compilation Error
+4
+MCQ
+1
+What is the numerical range of a char data type in Java?
+0 to 256~-128 to 127~0 to 65535~0 to 32767
+3
+MCQ
+31
+What will be the output of the following Java program?
+   class overload 
+   {
+        int x;
+ 	    double y;
+        void add(int a , int b) 
+        {
+            x = a + b;
+        }
+        void add(double c , double d)
+        {
+            y = c + d;
+        }
+        overload() 
+        {
+            this.x = 0;
+            this.y = 0;
+        }        
+    }    
+    class Overload_methods 
+    {
+        public static void main(String args[])
+        {
+            overload obj = new overload();   
+            int a = 2;
+            double b = 3.2;
+            obj.add(a, a);
+            obj.add(b, b);
+            System.out.println(obj.x + " " + obj.y);     
+        }
+   }
+4 6.4~6.4 6~6.4 6.4~6 6
+1
+ESSAY
+what is an interface in java?
+abstraction,abstract,constants
+ESSAY
+Can we define private and protected modifiers for data members (fields) in interfaces?
+no,No
+ESSAY
+Suppose A is an interface. Can we create an object using new A()?
+no,No
+ESSAY
+Can an interface extends another interface in Java?
+yes,Yes
+ESSAY
+Can an interface implement another interface?
+No,no
+ESSAY
+Is it possible to define a class inside an interface?
+yes,Yes
+ESSAY
+Describe Open Close principle?
+extension,modification,open for extension,closed for modification
+ESSAY
+Describe Single Responsibility principle?
+one,reason,one and only reason
+ESSAY
+What are the main features of OOPs?
+inheritance,abstraction,encapsulation,polymorphism
+ESSAY
+What are some advantages of using OOPs?
+reuse,code reuse,complex,flexibility
+ESSAY
+What is an object?
+instance of class,instance,entity
+ESSAY
+What are the various types of inheritance?
+single,multiple,multi level,hybrid,hierarchical
+ESSAY
+What is meant by dynamic polymorphism?
+runtime,override
+ESSAY
+What is meant by static polymorphism?
+compiletime,overload
+ESSAY
+What is an exception?
+event,catch,unintended,undesirable,output
+ESSAY
+What is garbage collection?
+memory,management
